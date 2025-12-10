@@ -1,15 +1,18 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesPackage{stys/beautybook-cnsettings}[2024/07/14,v5.0]
 % ----------------------------------- 字体设置 ----------------------------------- %
-\defaultfontfeatures{Path=fonts/} % 定义默认的字体存放位置路径
+\defaultfontfeatures{Path= latex/} % 定义默认的字体存放位置路径
 \setCJKmainfont[BoldFont={FZheiti_GBK.TTF},ItalicFont={FZBWKSK.TTF},SlantedFont = {HYShuFang_75W.ttf}]{FZsong_GBK.TTF}
 \setCJKsansfont[BoldFont={HYShuFang_75W.ttf},ItalicFont={FZBWKSK.TTF},SlantedFont = {FZkaiti_GBK.TTF}]{FZheiti_GBK.TTF}
 \setCJKmonofont{FZfangsong_GBK.TTF}
 \newCJKfontfamily[kaishu]\kaishu{FZkaiti_GBK.TTF}
 \newCJKfontfamily[shufang]\shufang{HYShuFang_75W.ttf}
+\newCJKfontfamily[fangsong]\fangsong{FZsong_GBK.TTF}
+\newCJKfontfamily[heiti]\heiti{FZheiti_GBK.TTF}
+%\newCJKfontfamily[lishu]\lishu{tex/隶书/STLiti.ttf}
 % /* ---------------------------------------------------------------------------- */
 \setmainfont[
-   Path = fonts/pt-serif-pro-cufonfonts/,   % 字体文件的路径（可选）
+    Path = latex/pt-serif-pro-cufonfonts/,   % 字体文件的路径（可选）
    Extension =.OTF,              % 字体文件扩展名（例如 .ttf 或 .otf）
    UprightFont = *-Regular,       % 正常字体
    BoldFont = *-Bold,             % 粗体
@@ -37,7 +40,7 @@
 %   % LetterSpace = 5.0,             % 字母间距调整（单位为千分单位，1000 为正常）
 % ]{XITS}
 \setsansfont[
-   Path = fonts/HONORSans/,   % 字体文件的路径（可选）
+    Path = latex/HONORSans/,   % 字体文件的路径（可选）
    Extension =.ttf,              % 字体文件扩展名（例如 .ttf 或 .otf）
    UprightFont = *-Regular,       % 正常字体
    BoldFont = *-Bold,             % 粗体
@@ -50,7 +53,7 @@
    % LetterSpace = 5.0,             % 字母间距调整（单位为千分单位，1000 为正常）
 ]{HONORSans}
 \setmonofont[
-   Path = fonts/Go-Mono/,   % 字体文件的路径（可选）
+    Path = latex/Go-Mono/,   % 字体文件的路径（可选）
    Extension =.ttf,              % 字体文件扩展名（例如 .ttf 或 .otf）
    UprightFont = *-Regular,       % 正常字体
    BoldFont = *-Bold,             % 粗体

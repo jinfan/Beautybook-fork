@@ -316,7 +316,7 @@ fuzzy shadow={0.4mm}{-0.4mm}{0mm}{0.2mm}{fill=white!40!gray},%下
       \end{pgfonlayer}
       \path[fill=outermarginfgcolor]node[append after command={
       ([xshift=-3*\rad]chapinfoofpart.north west)  to[out=0,in=-180,looseness=1] ([xshift=\rad]chapinfoofpart.south west) --([xshift=-\rad]chapinfoofpart.south east) to[out=0,in=180,looseness=1] ([xshift=3*\rad]chapinfoofpart.north east) --cycle},
-      text=white,font=\sffamily\large\bfseries,align=center,minimum height=1cm] (chapinfoofpart) at ([shift={(0,-4.95cm)}]current page.north) {Part\ \thepart};
+      text=white,font=\sffamily\large\bfseries,align=center,minimum height=1cm] (chapinfoofpart) at ([shift={(0,-4.95cm)}]current page.north) {部\ \thepart};
       \begin{pgfonlayer}{bottom}
         \fill[outermarginfgcolor!90,opacity=0.5] ([shift={(-3*\rad,0)}]chapinfoofpart.north west) to[out=180,in=0,looseness=1] +(-4*\rad,-1.2cm)--([shift={(7*\rad,-1.2cm)}]chapinfoofpart.north east) to[out=-180,in=0,looseness=1] +(-4*\rad,1.2cm); % partnumber shade
       \end{pgfonlayer}
@@ -521,7 +521,7 @@ color=transparent!90, middle color=transparent!20]
 \begin{tikzpicture}[remember picture]
     \path[fill=outermarginfgcolor,drop shadow={opacity=0.3,shadow xshift=.05cm,shadow yshift=-.05cm}]node[append after command={
     ([xshift=\rad]sec.north west) to[out=180,in=0,looseness=1] ([xshift=-3*\rad]sec.south west) --([xshift=-\rad]sec.south east) to[out=0,in=180,looseness=1] ([xshift=3*\rad]sec.north east) --cycle},
-    text=white,font=\sffamily\large\bfseries,align=center,inner ysep=2mm] (sec) at (0,0) {Sec\ \thesection};
+    text=white,font=\sffamily\large\bfseries,align=center,inner ysep=2mm] (sec) at (0,0) {\ \thesection};
     \node[text=black,font=\large,below right] (secnum) at ([shift={(0,-1mm)}]sec.north east) {\begin{varwidth}{.85\linewidth}\setlength\baselineskip{18pt}\hspace{.5cm}#1\end{varwidth}};
 \end{tikzpicture}}}%最后一个选项为 [<after code>]
 
@@ -530,7 +530,7 @@ color=transparent!90, middle color=transparent!20]
 \begin{tikzpicture}[remember picture]
     \path[fill=outermarginfgcolor,drop shadow={opacity=0.3,shadow xshift=.05cm,shadow yshift=-.05cm}]node[append after command={
     ([xshift=\rad]sec.north west) to[out=180,in=0,looseness=1] ([xshift=-3*\rad]sec.south west) --([xshift=-\rad]sec.south east) to[out=0,in=180,looseness=1] ([xshift=3*\rad]sec.north east) --cycle},
-    text=white,font=\sffamily\large\bfseries,align=center,inner ysep=2mm] (sec) at (0,0) {Sec};
+    text=white,font=\sffamily\large\bfseries,align=center,inner ysep=2mm] (sec) at (0,0) {};
     \node[text=black,font=\large,below right] (secnum) at ([shift={(0,-1mm)}]sec.north east) {\begin{varwidth}{.85\linewidth}\setlength\baselineskip{18pt}\hspace{.5cm}#1\end{varwidth}};
 \end{tikzpicture}}}%最后一个选项为 [<after code>]
 
